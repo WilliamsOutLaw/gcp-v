@@ -1,12 +1,149 @@
 {
+  "routing": {
+    "rules": [
+      {
+        "outboundTag": "DIRECT",
+        "domain": [
+          "full:cp.cloudflare.com",
+          "domain:msftconnecttest.com",
+          "domain:msftncsi.com",
+          "domain:connectivitycheck.gstatic.com",
+          "domain:captive.apple.com",
+          "full:detectportal.firefox.com",
+          "domain:networkcheck.kde.org",
+          "full:*.gstatic.com"
+        ],
+        "type": "field"
+      },
+      {
+        "outboundTag": "BLOCK",
+        "domain": [
+          "geosite:category-ads-all",
+          "full:*.linkmessenger.me",
+          "full:*.linkm.me",
+          "full:*.linkm.meusers",
+          "full:*.beletapis.com",
+          "full:*.belet.me",
+          "full:*.belet.tm",
+          "domain:linkm.me",
+          "domain:linkmessenger.me",
+          "domain:linkm.meusers",
+          "domain:beletapis.com",
+          "domain:belet.me",
+          "domain:belet.tm",
+          "full:m.horjuntv.com.tm"
+        ],
+        "type": "field"
+      },
+      {
+        "outboundTag": "BLOCK",
+        "domain": [
+          "geosite:cryptominers",
+          "geosite:cryptocurrency"
+        ],
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "BLOCK",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private"
+        ],
+        "outboundTag": "BLOCK",
+        "type": "field"
+      }
+    ]
+  },
   "inbounds": [
     {
+      "tag": "VLESS WS TLS",
       "port": 8080,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "36459fd0-0c89-4733-b20e-067ffc341bd2",
+            "id": "bcdbe144-ec87-4526-b75b-7cdf924976bb",
+            "level": 0
+          },
+          {
+            "id": "914e4a0a-9c8b-445c-ac7d-e91543287ae5",
+            "level": 0
+          },
+          {
+            "id": "b91b1012-47c4-4af7-93da-59dc761975dc",
+            "level": 0
+          },
+          {
+            "id": "ed4f9a63-e1b4-4a63-bca3-9b2be92b984f",
+            "level": 0
+          },
+          {
+            "id": "b56d829e-9df8-4d67-960f-39825f14c302",
+            "level": 0
+          },
+          {
+            "id": "9bf4e4f0-77d3-48ee-947a-ae2f97678cf6",
+            "level": 0
+          },
+          {
+            "id": "8c705179-6188-4a26-a8be-4a49d6ece697",
+            "level": 0
+          },
+          {
+            "id": "950665c5-6124-4d7b-82ea-77ad5a5e76a8",
+            "level": 0
+          },
+          {
+            "id": "79da0238-21d0-46fd-acf4-99c3a8b5c9e5",
+            "level": 0
+          },
+         {
+            "id": "e9805f20-5639-4cd3-b212-6eb3f52c2c8c",
+            "level": 0
+          },
+          {
+            "id": "f8a1b2c3-d4e5-f6a7-b8c9-d0e1f2a3b4c5",
+            "level": 0
+          },
+          {
+            "id": "1a2b3c4d-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+            "level": 0
+          },
+          {
+            "id": "e987f6d5-c4b3-a210-9876-543210fedcba",
+            "level": 0
+          },
+          {
+            "id": "0f1e2d3c-4b5a-6789-0123-456789abcdef",
+            "level": 0
+          },
+          {
+            "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+            "level": 0
+          },
+          {
+            "id": "fedcba98-7654-3210-fedc-ba9876543210",
+            "level": 0
+          },
+          {
+            "id": "5e6f7a8b-9c0d-e1f2-a3b4-c5d6e7f8a9b0",
+            "level": 0
+          },
+          {
+            "id": "12345678-90ab-cdef-0123-456789abcdef",
+            "level": 0
+          },
+          {
+            "id": "b7c8d9e0-f1a2-b3c4-d5e6-f7a8b9c0d1e2",
+            "level": 0
+          },
+          {
+            "id": "4d3c2b1a-0f9e-8d7c-6b5a-4f3e2d1c0b9a",
             "level": 0
           }
         ],
@@ -15,7 +152,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/TG-@Not_Ragnar"
+          "path": "/williams-out-law"
         }
       }
     }
