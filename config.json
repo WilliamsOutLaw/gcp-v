@@ -36,14 +36,6 @@
         "type": "field"
       },
       {
-        "outboundTag": "BLOCK",
-        "domain": [
-          "geosite:cryptominers",
-          "geosite:cryptocurrency"
-        ],
-        "type": "field"
-      },
-      {
         "ip": [
           "geoip:private"
         ],
@@ -61,7 +53,6 @@
   },
   "inbounds": [
     {
-      "tag": "VLESS WS TLS",
       "port": 8080,
       "protocol": "vless",
       "settings": {
